@@ -1,11 +1,11 @@
-# AutomatedCompetitorAnalysisEngine
+# Automated Competitor Analysis Engine
 A mini-SaaS backend microservice designed to simulate an automated competitor analysis engine. Accepts inbound API requests, checks a PostgreSQL-backed cache layer for existing analysis results, simulates an AI processing workflow for cache misses, and stores generated analysis data for future retrieval.
 
 ## API
 
 POST /api/v1/analyze
 
-Request body:
+Request body example:
 ```json
 {
   "target_url": "https://example.com",
@@ -18,11 +18,11 @@ Request body:
 ### 1. Run the following commands + keep Docker running
 
  ```bash
-   npm install
+ npm install
  ```
 
 ```bash
-   docker compose up -d
+docker compose up -d
 ```
    
  ```bash
