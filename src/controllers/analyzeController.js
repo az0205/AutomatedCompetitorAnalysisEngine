@@ -84,4 +84,3 @@ const analyzeCompetitor = async (req, res) => {
     }
 };
 module.exports = { analyzeCompetitor }
-module.exports = { analyzeCompetitor }
