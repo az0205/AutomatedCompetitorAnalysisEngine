@@ -37,3 +37,8 @@ CREATE TABLE api_cache_registry (
 
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE request_locks (
+    request_signature TEXT PRIMARY KEY,
+    locked_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
