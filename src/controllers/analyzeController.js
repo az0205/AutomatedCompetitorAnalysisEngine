@@ -29,7 +29,7 @@ const analyzeCompetitor = async (req, res) => {
         if (lockResult.rows.length === 0) {
             return res.status(202).json({
                 status: "processing",
-                message: "An analysis is already running for this request"
+                message: "An analysis is already running for this request, please wait..."
             });
         }
 
